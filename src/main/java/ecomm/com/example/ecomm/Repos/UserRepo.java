@@ -7,5 +7,6 @@ import ecomm.com.example.ecomm.Modals.User;
 public interface UserRepo extends MongoRepository<User, String> {
 
     User findUserByEmail(String email);
+    User findUserByUsername(String username);
     Boolean existsByEmail(String email);
 }

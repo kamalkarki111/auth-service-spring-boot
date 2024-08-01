@@ -15,9 +15,8 @@ import lombok.Setter;
 @Getter
 public class User {
 
-    @Id
     @NotBlank(message = "Username cannot be blank")
-    private String userName;
+    private String username;
 
     @NotBlank(message = "Password cannot be blank")
     private String password;
@@ -25,5 +24,4 @@ public class User {
     @NotBlank(message = "Email cannot be blank")
     @Email(message = "Email should be valid")
     private String email;
-    
 }
